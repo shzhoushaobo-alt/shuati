@@ -211,10 +211,10 @@ function nextPractice() {
 function startTest() {
   const onlyWrong = document.getElementById("testOnlyWrong").checked;
   const pool = onlyWrong ? state.questions.filter((q) => state.wrongSet.has(q.id)) : state.questions;
-  const singles = shuffle(pool.filter((q) => q.type === "single")).slice(0, 60);
+  const singles = shuffle(pool.filter((q) => q.type === "single")).slice(0, 70);
   const judges = shuffle(pool.filter((q) => q.type === "judge")).slice(0, 20);
   const multis = shuffle(pool.filter((q) => q.type === "multi")).slice(0, 10);
-  const source = [...singles, ...judges, ...multis];
+  const source = [...singles, ...multis, ...judges];
   state.testQueue = source;
   state.testAnswers = {};
   const root = document.getElementById("testContainer");
@@ -240,9 +240,9 @@ function startTest() {
     return `<h3>${title}</h3><div class="list">${sectionItems}</div>`;
   };
 
-  root.innerHTML = `<div class="result">本次测试共 ${source.length} 题（单选 ${singles.length} / 判断 ${judges.length} / 多选 ${multis.length}）</div>${
+  root.innerHTML = `<div class="result">本次测试共 ${source.length} 题（单选 ${singles.length} / 多选 ${multis.length} / 判断 ${judges.length}；每题1分）</div>${
     renderSection("一、单选题", singles)
-  }${renderSection("二、判断题", judges)}${renderSection("三、多选题", multis)}`;
+  }${renderSection("二、多选题", multis)}${renderSection("三、判断题", judges)}`;
   submitBtn.disabled = false;
   document.getElementById("testResult").textContent = "";
 
@@ -287,7 +287,7 @@ function submitTest() {
     }
     knownTotal += 1;
     const ok = answer.length === selected.length && answer.every((x) => selected.includes(x));
-    const itemScore = q.type === "multi" ? 2 : 1;
+    const itemScore = 1;
     if (ok) {
       score += itemScore;
       if (state.wrongSet.has(q.id)) state.wrongSet.delete(q.id);
@@ -302,7 +302,7 @@ function submitTest() {
   const result = [
     `已判分题数：${knownTotal}`,
     `得分：${score}`,
-    `满分：100（单选60 + 判断20 + 多选20）`,
+    `满分：100（每题1分；单选70 + 多选10 + 判断20）`,
     `错误题号：${wrongIds.length ? wrongIds.join(", ") : "无"}`,
     `未录入标准答案题号：${unknownIds.length ? unknownIds.join(", ") : "无"}`,
   ].join("\n");
