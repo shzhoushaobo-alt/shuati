@@ -55,12 +55,14 @@ git push -u origin main
 
 ## 答案说明
 
-`questions.json` 中大部分题目已替换为**你提供的官方答案**（`explanation: official`）。  
-单选题 **id 164～350** 在你提供的答案表中未列出，仍保留为预测答案（`explanation: predicted`）；若你后续补全，可编辑 `official_answer_source.md` 后运行：
+`questions.json` 中 **499 题**已按网站出题顺序（单选 1–350、判断 351–450、多选 451–499）写入官方答案（`explanation: official`）。  
+答案来源文件为 `official_answer_compact.txt`，更新后执行：
 
 ```bash
-python3 apply_official_answers.py
+python3 apply_compact_answers.py
 ```
+
+说明：你提供的 **101–150** 行原始字符串在按空格拆分时多出 2 个字母，已按「每行 50 题」修正为：`… AA B B A` 与 `AA AA AA AA AA`。若与你纸质/网页答案不一致，请直接改 `official_answer_compact.txt` 该行后再运行上述命令。
 
 你也可以：
 
