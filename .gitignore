@@ -1,0 +1,7 @@
+.venv/
+node_modules/
+.DS_Store
+*.log
+wjx_raw.html
+submit_resp.html
+.vercel
