@@ -195,6 +195,17 @@ textarea {
   background: rgba(255, 255, 255, 0.95);
 }
 
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 10px;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.95);
+  margin-bottom: 8px;
+}
+
 .list {
   display: grid;
   gap: 10px;

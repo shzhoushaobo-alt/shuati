@@ -52,6 +52,17 @@
       <div class="toolbar">
         <button id="exportAnswersBtn">导出答案 JSON</button>
       </div>
+      <div class="card" style="margin-bottom:10px;">
+        <p class="hint">云端同步（跨设备）：使用 GitHub Gist 存储答案库。</p>
+        <input id="gistIdInput" type="text" placeholder="Gist ID（例如 8f3a...）" />
+        <input id="gistTokenInput" type="password" placeholder="GitHub Token（需 gist 权限，用于推送）" />
+        <div class="actions" style="margin-top:8px;">
+          <button id="saveSyncConfigBtn">保存云端配置</button>
+          <button id="pullCloudAnswersBtn">拉取云端答案</button>
+          <button id="pushCloudAnswersBtn">推送到云端</button>
+        </div>
+        <div id="syncMessage" class="result"></div>
+      </div>
       <p class="hint">导入格式示例：{"1":["B"],"2":["A","C"]}。键是题号，值是正确选项数组。</p>
       <textarea id="answersInput" rows="8" placeholder='粘贴答案 JSON'></textarea>
       <div class="actions">

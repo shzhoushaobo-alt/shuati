@@ -2,6 +2,7 @@ const STORAGE_WRONG = "ai_quiz_wrong_ids_v1";
 const STORAGE_ANSWERS = "ai_quiz_answers_v1";
 const STORAGE_PRACTICE_TOTAL = "ai_quiz_practice_total_v1";
 const STORAGE_PRACTICE_STATE = "ai_quiz_practice_state_v1";
+const STORAGE_SYNC_CONFIG = "ai_quiz_sync_config_v1";
 
 const state = {
   questions: [],
@@ -16,6 +17,10 @@ const state = {
   practiceRoundAnswered: 0,
   practiceTotalAnswered: 0,
   practiceMode: "all",
+  syncConfig: {
+    gistId: "",
+    token: "",
+  },
 };
 
 function shuffle(arr) {
@@ -74,6 +79,14 @@ function loadLocalData() {
   try {
     state.practiceTotalAnswered = Number(localStorage.getItem(STORAGE_PRACTICE_TOTAL) || "0");
   } catch (_) {}
+
+  try {
+    const cfg = JSON.parse(localStorage.getItem(STORAGE_SYNC_CONFIG) || "{}");
+    if (cfg && typeof cfg === "object") {
+      state.syncConfig.gistId = cfg.gistId || "";
+      state.syncConfig.token = cfg.token || "";
+    }
+  } catch (_) {}
 }
 
 function setMetaText() {
@@ -87,6 +100,16 @@ function renderPracticeStats() {
   const current = total ? state.practiceIndex + 1 : 0;
   document.getElementById("practiceStats").textContent =
     `本轮进度：第 ${current}/${total} 题 · 本轮已作答 ${state.practiceRoundAnswered} 题 · 累计已刷 ${state.practiceTotalAnswered} 题`;
+}
+
+function saveSyncConfig() {
+  localStorage.setItem(
+    STORAGE_SYNC_CONFIG,
+    JSON.stringify({
+      gistId: state.syncConfig.gistId,
+      token: state.syncConfig.token,
+    })
+  );
 }
 
 function renderQuestionCard(question, selected = [], reveal = false) {
@@ -369,6 +392,84 @@ function renderWrongBook() {
   root.innerHTML = `<div class="list">${html}</div>`;
 }
 
+function loadSyncConfigToForm() {
+  const gistEl = document.getElementById("gistIdInput");
+  const tokenEl = document.getElementById("gistTokenInput");
+  if (gistEl) gistEl.value = state.syncConfig.gistId || "";
+  if (tokenEl) tokenEl.value = state.syncConfig.token || "";
+}
+
+function getGistHeaders(requireToken = false) {
+  const headers = { Accept: "application/vnd.github+json" };
+  if (state.syncConfig.token) headers.Authorization = `Bearer ${state.syncConfig.token}`;
+  if (requireToken && !state.syncConfig.token) throw new Error("请先填写 GitHub Token（gist 权限）");
+  return headers;
+}
+
+function parseAnswersFromGistPayload(data) {
+  const files = data && data.files ? data.files : {};
+  const candidate = files["answers.json"] || Object.values(files)[0];
+  if (!candidate || !candidate.content) throw new Error("Gist 中未找到可读取的答案文件");
+  const parsed = JSON.parse(candidate.content);
+  if (!parsed || typeof parsed !== "object") throw new Error("云端答案格式错误");
+  return parsed;
+}
+
+async function pullCloudAnswers() {
+  const msg = document.getElementById("syncMessage");
+  try {
+    if (!state.syncConfig.gistId) throw new Error("请先填写 Gist ID");
+    msg.textContent = "正在拉取云端答案...";
+    const res = await fetch(`https://api.github.com/gists/${state.syncConfig.gistId}`, {
+      headers: getGistHeaders(false),
+    });
+    if (!res.ok) throw new Error(`拉取失败：HTTP ${res.status}`);
+    const data = await res.json();
+    const remoteAnswers = parseAnswersFromGistPayload(data);
+    let count = 0;
+    Object.entries(remoteAnswers).forEach(([id, ans]) => {
+      if (Array.isArray(ans) && ans.length) {
+        state.answersMap[id] = ans.map((x) => String(x).toUpperCase());
+        count += 1;
+      }
+    });
+    saveAnswersMap();
+    setMetaText();
+    renderPracticeCurrent();
+    renderWrongBook();
+    msg.textContent = `拉取成功：合并 ${count} 题。`;
+  } catch (err) {
+    msg.textContent = `拉取失败：${err.message}`;
+  }
+}
+
+async function pushCloudAnswers() {
+  const msg = document.getElementById("syncMessage");
+  try {
+    if (!state.syncConfig.gistId) throw new Error("请先填写 Gist ID");
+    msg.textContent = "正在推送到云端...";
+    const body = {
+      files: {
+        "answers.json": {
+          content: JSON.stringify(state.answersMap, null, 2),
+        },
+      },
+    };
+    const res = await fetch(`https://api.github.com/gists/${state.syncConfig.gistId}`, {
+      method: "PATCH",
+      headers: {
+        ...getGistHeaders(true),
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(body),
+    });
+    if (!res.ok) throw new Error(`推送失败：HTTP ${res.status}`);
+    msg.textContent = `推送成功：云端已更新 ${Object.keys(state.answersMap).length} 题。`;
+  } catch (err) {
+    msg.textContent = `推送失败：${err.message}`;
+  }
+}
+
 function bindEvents() {
   document.querySelectorAll(".tab").forEach((btn) => {
     btn.addEventListener("click", () => switchTab(btn.dataset.tab));
@@ -413,6 +514,15 @@ function bindEvents() {
       message.textContent = `导入失败：${err.message}`;
     }
   });
+
+  document.getElementById("saveSyncConfigBtn").addEventListener("click", () => {
+    state.syncConfig.gistId = document.getElementById("gistIdInput").value.trim();
+    state.syncConfig.token = document.getElementById("gistTokenInput").value.trim();
+    saveSyncConfig();
+    document.getElementById("syncMessage").textContent = "云端配置已保存（当前设备）。";
+  });
+  document.getElementById("pullCloudAnswersBtn").addEventListener("click", pullCloudAnswers);
+  document.getElementById("pushCloudAnswersBtn").addEventListener("click", pushCloudAnswers);
 }
 
 async function bootstrap() {
@@ -422,6 +532,7 @@ async function bootstrap() {
   state.byId = new Map(state.questions.map((q) => [q.id, q]));
   setMetaText();
   bindEvents();
+  loadSyncConfigToForm();
   if (!restorePracticeState()) {
     initPractice(false);
   } else {
