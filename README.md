@@ -55,7 +55,14 @@ git push -u origin main
 
 ## 答案说明
 
-`questions.json` 中已带有预测答案（便于先刷后校正）。你可以：
+`questions.json` 中大部分题目已替换为**你提供的官方答案**（`explanation: official`）。  
+单选题 **id 164～350** 在你提供的答案表中未列出，仍保留为预测答案（`explanation: predicted`）；若你后续补全，可编辑 `official_answer_source.md` 后运行：
+
+```bash
+python3 apply_official_answers.py
+```
+
+你也可以：
 
 1. 在页面 `答案管理` 中导入/导出答案 JSON；
 2. 在无限刷题里使用「将当前作答设为最终答案」覆盖本地标准答案（浏览器本地存储）。

@@ -24,7 +24,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 2,
@@ -51,7 +51,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 3,
@@ -76,9 +76,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 4,
@@ -103,9 +103,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 5,
@@ -132,7 +132,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 6,
@@ -157,9 +157,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 7,
@@ -184,9 +184,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 8,
@@ -211,9 +211,9 @@
       }
     ],
     "answer": [
-      "B"
+      "C"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 9,
@@ -238,9 +238,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 10,
@@ -265,9 +265,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 11,
@@ -294,7 +294,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 12,
@@ -321,7 +321,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 13,
@@ -346,9 +346,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 14,
@@ -375,7 +375,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 15,
@@ -400,9 +400,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 16,
@@ -427,9 +427,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 17,
@@ -456,7 +456,7 @@
     "answer": [
       "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 18,
@@ -481,9 +481,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 19,
@@ -510,7 +510,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 20,
@@ -535,9 +535,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 21,
@@ -562,9 +562,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 22,
@@ -591,7 +591,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 23,
@@ -616,9 +616,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 24,
@@ -643,9 +643,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 25,
@@ -672,7 +672,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 26,
@@ -697,9 +697,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 27,
@@ -724,9 +724,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 28,
@@ -753,7 +753,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 29,
@@ -778,9 +778,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 30,
@@ -805,9 +805,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 31,
@@ -832,9 +832,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 32,
@@ -859,9 +859,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 33,
@@ -886,9 +886,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 34,
@@ -913,9 +913,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 35,
@@ -940,9 +940,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 36,
@@ -969,7 +969,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 37,
@@ -996,7 +996,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 38,
@@ -1021,9 +1021,9 @@
       }
     ],
     "answer": [
-      "B"
+      "C"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 39,
@@ -1050,7 +1050,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 40,
@@ -1077,7 +1077,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 41,
@@ -1104,7 +1104,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 42,
@@ -1131,7 +1131,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 43,
@@ -1158,7 +1158,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 44,
@@ -1185,7 +1185,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 45,
@@ -1212,7 +1212,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 46,
@@ -1239,7 +1239,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 47,
@@ -1266,7 +1266,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 48,
@@ -1291,9 +1291,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 49,
@@ -1320,7 +1320,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 50,
@@ -1347,7 +1347,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 51,
@@ -1374,7 +1374,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 52,
@@ -1399,9 +1399,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 53,
@@ -1426,9 +1426,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 54,
@@ -1453,9 +1453,9 @@
       }
     ],
     "answer": [
-      "B"
+      "C"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 55,
@@ -1482,7 +1482,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 56,
@@ -1509,7 +1509,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 57,
@@ -1536,7 +1536,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 58,
@@ -1561,9 +1561,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 59,
@@ -1590,7 +1590,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 60,
@@ -1615,9 +1615,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 61,
@@ -1644,7 +1644,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 62,
@@ -1671,7 +1671,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 63,
@@ -1696,9 +1696,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 64,
@@ -1723,9 +1723,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 65,
@@ -1750,9 +1750,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 66,
@@ -1777,9 +1777,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 67,
@@ -1804,9 +1804,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 68,
@@ -1831,9 +1831,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 69,
@@ -1858,9 +1858,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 70,
@@ -1887,7 +1887,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 71,
@@ -1914,7 +1914,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 72,
@@ -1939,9 +1939,9 @@
       }
     ],
     "answer": [
-      "B"
+      "C"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 73,
@@ -1966,9 +1966,9 @@
       }
     ],
     "answer": [
-      "B"
+      "C"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 74,
@@ -1995,7 +1995,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 75,
@@ -2022,7 +2022,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 76,
@@ -2049,7 +2049,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 77,
@@ -2076,7 +2076,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 78,
@@ -2103,7 +2103,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 79,
@@ -2130,7 +2130,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 80,
@@ -2157,7 +2157,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 81,
@@ -2182,9 +2182,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 82,
@@ -2211,7 +2211,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 83,
@@ -2238,7 +2238,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 84,
@@ -2265,7 +2265,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 85,
@@ -2292,7 +2292,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 86,
@@ -2319,7 +2319,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 87,
@@ -2346,7 +2346,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 88,
@@ -2373,7 +2373,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 89,
@@ -2400,7 +2400,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 90,
@@ -2427,7 +2427,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 91,
@@ -2454,7 +2454,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 92,
@@ -2479,9 +2479,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 93,
@@ -2508,7 +2508,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 94,
@@ -2535,7 +2535,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 95,
@@ -2562,7 +2562,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 96,
@@ -2589,7 +2589,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 97,
@@ -2616,7 +2616,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 98,
@@ -2643,7 +2643,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 99,
@@ -2670,7 +2670,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 100,
@@ -2697,7 +2697,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 101,
@@ -2724,7 +2724,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 102,
@@ -2751,7 +2751,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 103,
@@ -2776,9 +2776,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 104,
@@ -2803,9 +2803,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 105,
@@ -2832,7 +2832,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 106,
@@ -2859,7 +2859,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 107,
@@ -2886,7 +2886,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 108,
@@ -2911,9 +2911,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 109,
@@ -2940,7 +2940,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 110,
@@ -2967,7 +2967,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 111,
@@ -2994,7 +2994,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 112,
@@ -3021,7 +3021,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 113,
@@ -3048,7 +3048,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 114,
@@ -3075,7 +3075,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 115,
@@ -3102,7 +3102,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 116,
@@ -3129,7 +3129,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 117,
@@ -3156,7 +3156,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 118,
@@ -3181,9 +3181,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 119,
@@ -3210,7 +3210,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 120,
@@ -3237,7 +3237,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 121,
@@ -3264,7 +3264,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 122,
@@ -3291,7 +3291,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 123,
@@ -3318,7 +3318,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 124,
@@ -3345,7 +3345,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 125,
@@ -3372,7 +3372,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 126,
@@ -3399,7 +3399,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 127,
@@ -3426,7 +3426,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 128,
@@ -3453,7 +3453,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 129,
@@ -3480,7 +3480,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 130,
@@ -3507,7 +3507,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 131,
@@ -3534,7 +3534,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 132,
@@ -3561,7 +3561,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 133,
@@ -3588,7 +3588,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 134,
@@ -3615,7 +3615,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 135,
@@ -3642,7 +3642,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 136,
@@ -3669,7 +3669,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 137,
@@ -3696,7 +3696,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 138,
@@ -3723,7 +3723,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 139,
@@ -3750,7 +3750,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 140,
@@ -3775,9 +3775,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 141,
@@ -3804,7 +3804,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 142,
@@ -3831,7 +3831,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 143,
@@ -3858,7 +3858,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 144,
@@ -3885,7 +3885,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 145,
@@ -3912,7 +3912,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 146,
@@ -3937,9 +3937,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 147,
@@ -3966,7 +3966,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 148,
@@ -3993,7 +3993,7 @@
     "answer": [
       "B"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 149,
@@ -4018,9 +4018,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 150,
@@ -4045,9 +4045,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 151,
@@ -4072,9 +4072,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 152,
@@ -4099,9 +4099,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 153,
@@ -4126,9 +4126,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 154,
@@ -4153,9 +4153,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 155,
@@ -4180,9 +4180,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 156,
@@ -4207,9 +4207,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 157,
@@ -4234,9 +4234,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 158,
@@ -4261,9 +4261,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 159,
@@ -4288,9 +4288,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 160,
@@ -4315,9 +4315,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 161,
@@ -4342,9 +4342,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 162,
@@ -4369,9 +4369,9 @@
       }
     ],
     "answer": [
-      "B"
+      "A"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 163,
@@ -4396,9 +4396,9 @@
       }
     ],
     "answer": [
-      "B"
+      "C"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 164,
@@ -9466,7 +9466,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 352,
@@ -9485,7 +9485,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 353,
@@ -9504,7 +9504,7 @@
     "answer": [
       "F"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 354,
@@ -9523,7 +9523,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 355,
@@ -9542,7 +9542,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 356,
@@ -9561,7 +9561,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 357,
@@ -9580,7 +9580,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 358,
@@ -9599,7 +9599,7 @@
     "answer": [
       "F"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 359,
@@ -9618,7 +9618,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 360,
@@ -9635,9 +9635,9 @@
       }
     ],
     "answer": [
-      "T"
+      "F"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 361,
@@ -9656,7 +9656,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 362,
@@ -9675,7 +9675,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 363,
@@ -9694,7 +9694,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 364,
@@ -9713,7 +9713,7 @@
     "answer": [
       "F"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 365,
@@ -9732,7 +9732,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 366,
@@ -9751,7 +9751,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 367,
@@ -9770,7 +9770,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 368,
@@ -9789,7 +9789,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 369,
@@ -9808,7 +9808,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 370,
@@ -9827,7 +9827,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 371,
@@ -9846,7 +9846,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 372,
@@ -9865,7 +9865,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 373,
@@ -9884,7 +9884,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 374,
@@ -9903,7 +9903,7 @@
     "answer": [
       "F"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 375,
@@ -9922,7 +9922,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 376,
@@ -9941,7 +9941,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 377,
@@ -9960,7 +9960,7 @@
     "answer": [
       "F"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 378,
@@ -9979,7 +9979,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 379,
@@ -9998,7 +9998,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 380,
@@ -10017,7 +10017,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 381,
@@ -10036,7 +10036,7 @@
     "answer": [
       "F"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 382,
@@ -10055,7 +10055,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 383,
@@ -10074,7 +10074,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 384,
@@ -10093,7 +10093,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 385,
@@ -10112,7 +10112,7 @@
     "answer": [
       "F"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 386,
@@ -10131,7 +10131,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 387,
@@ -10150,7 +10150,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 388,
@@ -10169,7 +10169,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 389,
@@ -10188,7 +10188,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 390,
@@ -10207,7 +10207,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 391,
@@ -10224,9 +10224,9 @@
       }
     ],
     "answer": [
-      "T"
+      "F"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 392,
@@ -10245,7 +10245,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 393,
@@ -10264,7 +10264,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 394,
@@ -10283,7 +10283,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 395,
@@ -10302,7 +10302,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 396,
@@ -10321,7 +10321,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 397,
@@ -10340,7 +10340,7 @@
     "answer": [
       "F"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 398,
@@ -10359,7 +10359,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 399,
@@ -10378,7 +10378,7 @@
     "answer": [
       "F"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 400,
@@ -10397,7 +10397,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 401,
@@ -10416,7 +10416,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 402,
@@ -10435,7 +10435,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 403,
@@ -10454,7 +10454,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 404,
@@ -10471,9 +10471,9 @@
       }
     ],
     "answer": [
-      "F"
+      "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 405,
@@ -10492,7 +10492,7 @@
     "answer": [
       "F"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 406,
@@ -10511,7 +10511,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 407,
@@ -10530,7 +10530,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 408,
@@ -10549,7 +10549,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 409,
@@ -10566,9 +10566,9 @@
       }
     ],
     "answer": [
-      "T"
+      "F"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 410,
@@ -10587,7 +10587,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 411,
@@ -10606,7 +10606,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 412,
@@ -10625,7 +10625,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 413,
@@ -10642,9 +10642,9 @@
       }
     ],
     "answer": [
-      "T"
+      "F"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 414,
@@ -10663,7 +10663,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 415,
@@ -10682,7 +10682,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 416,
@@ -10701,7 +10701,7 @@
     "answer": [
       "F"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 417,
@@ -10720,7 +10720,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 418,
@@ -10737,9 +10737,9 @@
       }
     ],
     "answer": [
-      "T"
+      "F"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 419,
@@ -10758,7 +10758,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 420,
@@ -10777,7 +10777,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 421,
@@ -10794,9 +10794,9 @@
       }
     ],
     "answer": [
-      "T"
+      "F"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 422,
@@ -10815,7 +10815,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 423,
@@ -10832,9 +10832,9 @@
       }
     ],
     "answer": [
-      "T"
+      "F"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 424,
@@ -10853,7 +10853,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 425,
@@ -10872,7 +10872,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 426,
@@ -10891,7 +10891,7 @@
     "answer": [
       "F"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 427,
@@ -10910,7 +10910,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 428,
@@ -10927,9 +10927,9 @@
       }
     ],
     "answer": [
-      "T"
+      "F"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 429,
@@ -10948,7 +10948,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 430,
@@ -10965,9 +10965,9 @@
       }
     ],
     "answer": [
-      "T"
+      "F"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 431,
@@ -10986,7 +10986,7 @@
     "answer": [
       "F"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 432,
@@ -11005,7 +11005,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 433,
@@ -11024,7 +11024,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 434,
@@ -11043,7 +11043,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 435,
@@ -11062,7 +11062,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 436,
@@ -11079,9 +11079,9 @@
       }
     ],
     "answer": [
-      "T"
+      "F"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 437,
@@ -11100,7 +11100,7 @@
     "answer": [
       "F"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 438,
@@ -11119,7 +11119,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 439,
@@ -11138,7 +11138,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 440,
@@ -11157,7 +11157,7 @@
     "answer": [
       "F"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 441,
@@ -11176,7 +11176,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 442,
@@ -11195,7 +11195,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 443,
@@ -11212,9 +11212,9 @@
       }
     ],
     "answer": [
-      "T"
+      "F"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 444,
@@ -11233,7 +11233,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 445,
@@ -11252,7 +11252,7 @@
     "answer": [
       "F"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 446,
@@ -11271,7 +11271,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 447,
@@ -11288,9 +11288,9 @@
       }
     ],
     "answer": [
-      "T"
+      "F"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 448,
@@ -11309,7 +11309,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 449,
@@ -11328,7 +11328,7 @@
     "answer": [
       "T"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 450,
@@ -11345,9 +11345,9 @@
       }
     ],
     "answer": [
-      "T"
+      "F"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 451,
@@ -11379,10 +11379,9 @@
       "A",
       "B",
       "C",
-      "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 452,
@@ -11416,7 +11415,7 @@
       "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 453,
@@ -11448,10 +11447,9 @@
       "A",
       "B",
       "C",
-      "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 454,
@@ -11483,10 +11481,9 @@
       "A",
       "B",
       "C",
-      "D",
-      "E"
+      "D"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 455,
@@ -11518,10 +11515,9 @@
       "A",
       "B",
       "C",
-      "D",
-      "E"
+      "D"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 456,
@@ -11553,10 +11549,9 @@
       "A",
       "B",
       "C",
-      "D",
-      "E"
+      "D"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 457,
@@ -11587,11 +11582,10 @@
     "answer": [
       "A",
       "B",
-      "C",
       "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 458,
@@ -11623,10 +11617,9 @@
       "A",
       "B",
       "C",
-      "D",
-      "E"
+      "D"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 459,
@@ -11658,10 +11651,9 @@
       "A",
       "B",
       "C",
-      "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 460,
@@ -11693,10 +11685,9 @@
       "A",
       "B",
       "C",
-      "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 461,
@@ -11727,11 +11718,10 @@
     "answer": [
       "A",
       "B",
-      "C",
       "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 462,
@@ -11763,10 +11753,9 @@
       "A",
       "B",
       "C",
-      "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 463,
@@ -11798,10 +11787,9 @@
       "A",
       "B",
       "C",
-      "D",
-      "E"
+      "D"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 464,
@@ -11833,10 +11821,9 @@
       "A",
       "B",
       "C",
-      "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 465,
@@ -11868,10 +11855,9 @@
       "A",
       "B",
       "C",
-      "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 466,
@@ -11903,10 +11889,9 @@
       "A",
       "B",
       "C",
-      "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 467,
@@ -11938,10 +11923,9 @@
       "A",
       "B",
       "C",
-      "D",
-      "E"
+      "D"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 468,
@@ -11973,10 +11957,9 @@
       "A",
       "B",
       "C",
-      "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 469,
@@ -12008,10 +11991,9 @@
       "A",
       "B",
       "C",
-      "D",
-      "E"
+      "D"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 470,
@@ -12043,10 +12025,9 @@
       "A",
       "B",
       "C",
-      "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 471,
@@ -12078,10 +12059,9 @@
       "A",
       "B",
       "C",
-      "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 472,
@@ -12113,10 +12093,9 @@
       "A",
       "B",
       "C",
-      "D",
-      "E"
+      "D"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 473,
@@ -12148,10 +12127,9 @@
       "A",
       "B",
       "C",
-      "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 474,
@@ -12183,10 +12161,9 @@
       "A",
       "B",
       "C",
-      "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 475,
@@ -12218,10 +12195,9 @@
       "A",
       "B",
       "C",
-      "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 476,
@@ -12253,10 +12229,9 @@
       "A",
       "B",
       "C",
-      "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 477,
@@ -12288,10 +12263,9 @@
       "A",
       "B",
       "C",
-      "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 478,
@@ -12323,10 +12297,9 @@
       "A",
       "B",
       "C",
-      "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 479,
@@ -12358,10 +12331,9 @@
       "A",
       "B",
       "C",
-      "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 480,
@@ -12393,10 +12365,9 @@
       "A",
       "B",
       "C",
-      "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 481,
@@ -12428,10 +12399,9 @@
       "A",
       "B",
       "C",
-      "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 482,
@@ -12463,10 +12433,9 @@
       "A",
       "B",
       "C",
-      "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 483,
@@ -12497,11 +12466,10 @@
     "answer": [
       "A",
       "B",
-      "C",
       "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 484,
@@ -12533,10 +12501,9 @@
       "A",
       "B",
       "C",
-      "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 485,
@@ -12568,10 +12535,9 @@
       "A",
       "B",
       "C",
-      "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 486,
@@ -12603,10 +12569,9 @@
       "A",
       "B",
       "C",
-      "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 487,
@@ -12638,10 +12603,9 @@
       "A",
       "B",
       "C",
-      "D",
-      "E"
+      "D"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 488,
@@ -12673,10 +12637,9 @@
       "A",
       "B",
       "C",
-      "D",
-      "E"
+      "D"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 489,
@@ -12708,10 +12671,9 @@
       "A",
       "B",
       "C",
-      "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 490,
@@ -12743,10 +12705,9 @@
       "A",
       "B",
       "C",
-      "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 491,
@@ -12778,10 +12739,9 @@
       "A",
       "B",
       "C",
-      "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 492,
@@ -12813,10 +12773,9 @@
       "A",
       "B",
       "C",
-      "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 493,
@@ -12848,10 +12807,9 @@
       "A",
       "B",
       "C",
-      "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 494,
@@ -12880,7 +12838,7 @@
       "B",
       "C"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 495,
@@ -12911,10 +12869,9 @@
     "answer": [
       "A",
       "C",
-      "D",
-      "E"
+      "D"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 496,
@@ -12948,7 +12905,7 @@
       "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 497,
@@ -12982,7 +12939,7 @@
       "C",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 498,
@@ -13017,7 +12974,7 @@
       "D",
       "E"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   },
   {
     "id": 499,
@@ -13047,9 +13004,8 @@
     ],
     "answer": [
       "A",
-      "C",
-      "D"
+      "C"
     ],
-    "explanation": "predicted"
+    "explanation": "official"
   }
 ]
