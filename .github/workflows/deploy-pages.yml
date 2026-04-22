@@ -25,8 +25,23 @@ jobs:
 
       - name: Build static bundle
         run: |
+          set -e
+          echo "Repository root contents:"
+          ls -la
           mkdir -p dist
-          cp index.html app.js styles.css questions.json vercel.json dist/
+          missing=""
+          for f in index.html app.js styles.css questions.json; do
+            if [ ! -f "$f" ]; then
+              missing="$missing $f"
+            fi
+          done
+          if [ -n "$missing" ]; then
+            echo "::error::缺少网站文件（仓库根目录找不到）:$missing"
+            echo "请把刷题项目的 index.html、app.js、styles.css、questions.json 放到仓库根目录并 push，再重新运行 workflow。"
+            exit 1
+          fi
+          cp index.html app.js styles.css questions.json dist/
+          if [ -f vercel.json ]; then cp vercel.json dist/; fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
