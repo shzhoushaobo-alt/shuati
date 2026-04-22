@@ -1,6 +1,7 @@
 const STORAGE_WRONG = "ai_quiz_wrong_ids_v1";
 const STORAGE_ANSWERS = "ai_quiz_answers_v1";
 const STORAGE_PRACTICE_TOTAL = "ai_quiz_practice_total_v1";
+const STORAGE_PRACTICE_STATE = "ai_quiz_practice_state_v1";
 
 const state = {
   questions: [],
@@ -14,6 +15,7 @@ const state = {
   activeTab: "practice",
   practiceRoundAnswered: 0,
   practiceTotalAnswered: 0,
+  practiceMode: "all",
 };
 
 function shuffle(arr) {
@@ -38,6 +40,17 @@ function saveWrongSet() {
 
 function saveAnswersMap() {
   localStorage.setItem(STORAGE_ANSWERS, JSON.stringify(state.answersMap));
+}
+
+function savePracticeState() {
+  const payload = {
+    mode: state.practiceMode,
+    index: state.practiceIndex,
+    roundAnswered: state.practiceRoundAnswered,
+    totalAnswered: state.practiceTotalAnswered,
+    queueIds: state.practiceQueue.map((q) => q.id),
+  };
+  localStorage.setItem(STORAGE_PRACTICE_STATE, JSON.stringify(payload));
 }
 
 function setFinalAnswer(questionId, answerArr) {
@@ -125,8 +138,32 @@ function initPractice(withWrongOnly = false) {
   state.practiceQueue = shuffle(source);
   state.practiceIndex = 0;
   state.practiceRoundAnswered = 0;
+  state.practiceMode = withWrongOnly ? "wrong" : "all";
+  savePracticeState();
   renderPracticeCurrent();
   renderPracticeStats();
+}
+
+function restorePracticeState() {
+  try {
+    const raw = localStorage.getItem(STORAGE_PRACTICE_STATE);
+    if (!raw) return false;
+    const data = JSON.parse(raw);
+    if (!data || !Array.isArray(data.queueIds) || !data.queueIds.length) return false;
+    const queue = data.queueIds
+      .map((id) => state.byId.get(Number(id)))
+      .filter(Boolean);
+    if (!queue.length) return false;
+    state.practiceQueue = queue;
+    state.practiceIndex = Math.min(Math.max(Number(data.index) || 0, 0), queue.length - 1);
+    state.practiceRoundAnswered = Math.max(Number(data.roundAnswered) || 0, 0);
+    state.practiceTotalAnswered = Math.max(Number(data.totalAnswered) || state.practiceTotalAnswered, 0);
+    state.practiceMode = data.mode === "wrong" ? "wrong" : "all";
+    localStorage.setItem(STORAGE_PRACTICE_TOTAL, String(state.practiceTotalAnswered));
+    return true;
+  } catch (_) {
+    return false;
+  }
 }
 
 function renderPracticeCurrent() {
@@ -147,6 +184,7 @@ function renderPracticeCurrent() {
         state.practiceRoundAnswered += 1;
         state.practiceTotalAnswered += 1;
         localStorage.setItem(STORAGE_PRACTICE_TOTAL, String(state.practiceTotalAnswered));
+        savePracticeState();
         renderPracticeStats();
       }
       const selected = [btn.dataset.key];
@@ -204,6 +242,7 @@ function renderPracticeCurrent() {
 function nextPractice() {
   if (!state.practiceQueue.length) return;
   state.practiceIndex = (state.practiceIndex + 1) % state.practiceQueue.length;
+  savePracticeState();
   renderPracticeCurrent();
   renderPracticeStats();
 }
@@ -383,7 +422,12 @@ async function bootstrap() {
   state.byId = new Map(state.questions.map((q) => [q.id, q]));
   setMetaText();
   bindEvents();
-  initPractice(false);
+  if (!restorePracticeState()) {
+    initPractice(false);
+  } else {
+    renderPracticeCurrent();
+    renderPracticeStats();
+  }
   renderWrongBook();
 }
 
