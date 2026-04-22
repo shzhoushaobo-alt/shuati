@@ -21,6 +21,7 @@ const state = {
     gistId: "",
     token: "",
   },
+  lastAutoPushAt: 0,
 };
 
 function shuffle(arr) {
@@ -63,6 +64,7 @@ function setFinalAnswer(questionId, answerArr) {
   saveAnswersMap();
   setMetaText();
   renderWrongBook();
+  autoPushCloudAnswers();
 }
 
 function loadLocalData() {
@@ -470,6 +472,59 @@ async function pushCloudAnswers() {
   }
 }
 
+async function autoPullCloudAnswers() {
+  if (!state.syncConfig.gistId) return;
+  try {
+    const res = await fetch(`https://api.github.com/gists/${state.syncConfig.gistId}`, {
+      headers: getGistHeaders(false),
+    });
+    if (!res.ok) return;
+    const data = await res.json();
+    const remoteAnswers = parseAnswersFromGistPayload(data);
+    let changed = false;
+    Object.entries(remoteAnswers).forEach(([id, ans]) => {
+      if (Array.isArray(ans) && ans.length) {
+        const nextAns = ans.map((x) => String(x).toUpperCase());
+        const curr = state.answersMap[id] || [];
+        if (JSON.stringify(curr) !== JSON.stringify(nextAns)) {
+          state.answersMap[id] = nextAns;
+          changed = true;
+        }
+      }
+    });
+    if (changed) {
+      saveAnswersMap();
+      setMetaText();
+      renderPracticeCurrent();
+      renderWrongBook();
+    }
+  } catch (_) {}
+}
+
+async function autoPushCloudAnswers() {
+  if (!state.syncConfig.gistId || !state.syncConfig.token) return;
+  const now = Date.now();
+  if (now - state.lastAutoPushAt < 5000) return;
+  state.lastAutoPushAt = now;
+  try {
+    const body = {
+      files: {
+        "answers.json": {
+          content: JSON.stringify(state.answersMap, null, 2),
+        },
+      },
+    };
+    await fetch(`https://api.github.com/gists/${state.syncConfig.gistId}`, {
+      method: "PATCH",
+      headers: {
+        ...getGistHeaders(true),
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(body),
+    });
+  } catch (_) {}
+}
+
 function bindEvents() {
   document.querySelectorAll(".tab").forEach((btn) => {
     btn.addEventListener("click", () => switchTab(btn.dataset.tab));
@@ -509,6 +564,7 @@ function bindEvents() {
       setMetaText();
       renderPracticeCurrent();
       renderWrongBook();
+      autoPushCloudAnswers();
       message.textContent = `导入成功：${count} 题。`;
     } catch (err) {
       message.textContent = `导入失败：${err.message}`;
@@ -520,6 +576,7 @@ function bindEvents() {
     state.syncConfig.token = document.getElementById("gistTokenInput").value.trim();
     saveSyncConfig();
     document.getElementById("syncMessage").textContent = "云端配置已保存（当前设备）。";
+    autoPullCloudAnswers();
   });
   document.getElementById("pullCloudAnswersBtn").addEventListener("click", pullCloudAnswers);
   document.getElementById("pushCloudAnswersBtn").addEventListener("click", pushCloudAnswers);
@@ -533,6 +590,7 @@ async function bootstrap() {
   setMetaText();
   bindEvents();
   loadSyncConfigToForm();
+  await autoPullCloudAnswers();
   if (!restorePracticeState()) {
     initPractice(false);
   } else {
