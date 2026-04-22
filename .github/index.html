@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>AI 题库刷题</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <h1>AI 题库刷题</h1>
+      <p id="metaText">加载中...</p>
+    </header>
+
+    <section class="tabs">
+      <button class="tab active" data-tab="practice">无限刷题</button>
+      <button class="tab" data-tab="test">测试模式</button>
+      <button class="tab" data-tab="wrong">错题本</button>
+      <button class="tab" data-tab="manage">答案管理</button>
+    </section>
+
+    <section id="panelPractice" class="panel active">
+      <div id="practiceStats" class="result"></div>
+      <div id="practiceContainer"></div>
+      <div class="actions">
+        <button id="practiceNextBtn">下一题</button>
+      </div>
+    </section>
+
+    <section id="panelTest" class="panel">
+      <div class="toolbar">
+        <label><input id="testOnlyWrong" type="checkbox" /> 仅测错题本</label>
+        <button id="testStartBtn">开始测试</button>
+      </div>
+      <div id="testContainer"></div>
+      <div id="testResult" class="result"></div>
+      <div class="bottom-submit-wrap">
+        <button id="testSubmitBtn" disabled>交卷</button>
+      </div>
+    </section>
+
+    <section id="panelWrong" class="panel">
+      <div class="toolbar">
+        <button id="wrongStartPracticeBtn">按错题本刷题</button>
+        <button id="wrongClearBtn" class="danger">清空错题本</button>
+      </div>
+      <div id="wrongContainer"></div>
+    </section>
+
+    <section id="panelManage" class="panel">
+      <div class="toolbar">
+        <button id="exportAnswersBtn">导出答案 JSON</button>
+      </div>
+      <p class="hint">导入格式示例：{"1":["B"],"2":["A","C"]}。键是题号，值是正确选项数组。</p>
+      <textarea id="answersInput" rows="8" placeholder='粘贴答案 JSON'></textarea>
+      <div class="actions">
+        <button id="importAnswersBtn">导入答案</button>
+      </div>
+      <div id="manageMessage" class="result"></div>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
