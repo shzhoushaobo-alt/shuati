@@ -4,3 +4,7 @@ __pycache__
 wjx_raw.html
 submit_resp.html
 .git
+*.py
+official_answer_v2_source.md
+official_answer_source.md
+official_answer_compact.txt
