@@ -271,12 +271,14 @@ function renderPracticeMulti(root, q) {
         state.wrongSet.delete(q.id);
         saveWrongSet();
         setMetaText();
+        renderWrongBook();
       }
     } else {
       result.textContent = `回答错误。标准答案：${answer.join(", ")}`;
       state.wrongSet.add(q.id);
       saveWrongSet();
       setMetaText();
+      renderWrongBook();
     }
   }
 
@@ -329,12 +331,14 @@ function renderPracticeCurrent() {
           state.wrongSet.delete(q.id);
           saveWrongSet();
           setMetaText();
+          renderWrongBook();
         }
       } else {
         result.textContent = `回答错误。标准答案：${answer.join(", ")}`;
         state.wrongSet.add(q.id);
         saveWrongSet();
         setMetaText();
+        renderWrongBook();
       }
     });
   });
