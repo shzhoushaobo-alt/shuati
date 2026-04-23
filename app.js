@@ -49,8 +49,10 @@ function saveAnswersMap() {
 }
 
 function savePracticeState() {
+  // 错题本刷题仅内存会话，不写同一 key，避免覆盖「无限刷题」的进度与题集
+  if (state.practiceMode !== "all") return;
   const payload = {
-    mode: state.practiceMode,
+    mode: "all",
     index: state.practiceIndex,
     roundAnswered: state.practiceRoundAnswered,
     totalAnswered: state.practiceTotalAnswered,
@@ -154,6 +156,9 @@ function switchTab(tab) {
   });
   document.querySelectorAll(".panel").forEach((p) => p.classList.remove("active"));
   document.getElementById(`panel${tab[0].toUpperCase()}${tab.slice(1)}`).classList.add("active");
+  if (tab === "practice") {
+    resumeInfinitePracticeIfNeeded();
+  }
 }
 
 function initPractice(withWrongOnly = false) {
@@ -175,6 +180,11 @@ function restorePracticeState() {
     if (!raw) return false;
     const data = JSON.parse(raw);
     if (!data || !Array.isArray(data.queueIds) || !data.queueIds.length) return false;
+    // 历史版本曾把错题模式写入本地，会污染无限刷题恢复逻辑，直接丢弃
+    if (data.mode === "wrong") {
+      localStorage.removeItem(STORAGE_PRACTICE_STATE);
+      return false;
+    }
     const queue = data.queueIds
       .map((id) => state.byId.get(Number(id)))
       .filter(Boolean);
@@ -183,11 +193,25 @@ function restorePracticeState() {
     state.practiceIndex = Math.min(Math.max(Number(data.index) || 0, 0), queue.length - 1);
     state.practiceRoundAnswered = Math.max(Number(data.roundAnswered) || 0, 0);
     state.practiceTotalAnswered = Math.max(Number(data.totalAnswered) || state.practiceTotalAnswered, 0);
-    state.practiceMode = data.mode === "wrong" ? "wrong" : "all";
+    state.practiceMode = "all";
     localStorage.setItem(STORAGE_PRACTICE_TOTAL, String(state.practiceTotalAnswered));
     return true;
   } catch (_) {
     return false;
+  }
+}
+
+/** 从错题刷题回到「无限刷题」时，用本地已保存的全题库进度恢复，互不覆盖 */
+function resumeInfinitePracticeIfNeeded() {
+  const needResume =
+    state.practiceMode === "wrong" ||
+    (state.questions.length > 0 && state.practiceQueue.length === 0);
+  if (!needResume) return;
+  if (!restorePracticeState()) {
+    initPractice(false);
+  } else {
+    renderPracticeCurrent();
+    renderPracticeStats();
   }
 }
 
