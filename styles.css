@@ -74,6 +74,10 @@ body {
 }
 
 .toolbar,
+.practice-multi-confirm {
+  margin-top: 0.75rem;
+}
+
 .actions {
   display: flex;
   gap: 8px;

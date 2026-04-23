@@ -116,6 +116,13 @@ function saveSyncConfig() {
   );
 }
 
+function selectedMatchesAnswer(answer, selected) {
+  const a = new Set(answer.map((x) => String(x).toUpperCase()));
+  const s = new Set(selected.map((x) => String(x).toUpperCase()));
+  if (!a.size || a.size !== s.size) return false;
+  return [...s].every((k) => a.has(k));
+}
+
 function renderQuestionCard(question, selected = [], reveal = false) {
   const answer = getCorrectAnswer(question);
   const answerSet = new Set(answer);
@@ -215,6 +222,101 @@ function resumeInfinitePracticeIfNeeded() {
   }
 }
 
+function appendPracticeSetFinalRow(card, resultEl, q, selectedKeys) {
+  const actions = document.createElement("div");
+  actions.className = "actions";
+  const setFinalBtn = document.createElement("button");
+  setFinalBtn.textContent = `将当前作答设为最终答案（${selectedKeys.join(", ")}）`;
+  setFinalBtn.addEventListener("click", () => {
+    setFinalAnswer(q.id, selectedKeys);
+    resultEl.textContent = `已更新最终答案：${selectedKeys.join(", ")}（立即生效）`;
+    renderPracticeCurrent();
+  });
+  actions.appendChild(setFinalBtn);
+  card.appendChild(actions);
+}
+
+/** 多选题：点选项仅切换选中，点「确认作答」后才判分与展示解析 */
+function renderPracticeMulti(root, q) {
+  let selectedKeys = [];
+  let submitted = false;
+
+  function paint() {
+    root.innerHTML = renderQuestionCard(q, selectedKeys, submitted);
+    const card = root.querySelector(".card");
+    const result = root.querySelector("#cardResult");
+    const answer = getCorrectAnswer(q);
+
+    if (!submitted) {
+      const bar = document.createElement("div");
+      bar.className = "actions practice-multi-confirm";
+      const confirmBtn = document.createElement("button");
+      confirmBtn.type = "button";
+      confirmBtn.textContent = "确认作答";
+      confirmBtn.disabled = selectedKeys.length === 0;
+      bar.appendChild(confirmBtn);
+      card.appendChild(bar);
+
+      root.querySelectorAll(".opt").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const k = btn.dataset.key;
+          const idx = selectedKeys.indexOf(k);
+          if (idx >= 0) selectedKeys.splice(idx, 1);
+          else selectedKeys.push(k);
+          paint();
+        });
+      });
+
+      confirmBtn.addEventListener("click", () => {
+        if (submitted || selectedKeys.length === 0) return;
+        submitted = true;
+        state.practiceRoundAnswered += 1;
+        state.practiceTotalAnswered += 1;
+        localStorage.setItem(STORAGE_PRACTICE_TOTAL, String(state.practiceTotalAnswered));
+        savePracticeState();
+        renderPracticeStats();
+        paint();
+      });
+      return;
+    }
+
+    if (!answer.length) {
+      result.textContent = "此题暂无标准答案。你可以在“答案管理”里导入，或在下方设置本题答案。";
+      const actions = document.createElement("div");
+      actions.className = "actions";
+      q.options.forEach((opt) => {
+        const setBtn = document.createElement("button");
+        setBtn.textContent = `设 ${opt.key} 为答案`;
+        setBtn.addEventListener("click", () => {
+          setFinalAnswer(q.id, [opt.key]);
+          renderPracticeCurrent();
+        });
+        actions.appendChild(setBtn);
+      });
+      card.appendChild(actions);
+      return;
+    }
+
+    const ok = selectedMatchesAnswer(answer, selectedKeys);
+    if (ok) {
+      result.textContent = `回答正确。标准答案：${answer.join(", ")}`;
+      if (state.wrongSet.has(q.id)) {
+        state.wrongSet.delete(q.id);
+        saveWrongSet();
+        setMetaText();
+      }
+    } else {
+      result.textContent = `回答错误。标准答案：${answer.join(", ")}`;
+      state.wrongSet.add(q.id);
+      saveWrongSet();
+      setMetaText();
+    }
+    appendPracticeSetFinalRow(card, result, q, selectedKeys);
+  }
+
+  paint();
+}
+
 function renderPracticeCurrent() {
   const root = document.getElementById("practiceContainer");
   if (!state.practiceQueue.length) {
@@ -222,6 +324,12 @@ function renderPracticeCurrent() {
     return;
   }
   const q = state.practiceQueue[state.practiceIndex];
+
+  if (q.type === "multi") {
+    renderPracticeMulti(root, q);
+    return;
+  }
+
   root.innerHTML = renderQuestionCard(q);
   const opts = root.querySelectorAll(".opt");
   let answeredThisCard = false;
@@ -240,6 +348,7 @@ function renderPracticeCurrent() {
       const answer = getCorrectAnswer(q);
       root.innerHTML = renderQuestionCard(q, selected, true);
       const result = root.querySelector("#cardResult");
+      const card = root.querySelector(".card");
 
       if (!answer.length) {
         result.textContent = "此题暂无标准答案。你可以在“答案管理”里导入，或在下方设置本题答案。";
@@ -254,7 +363,7 @@ function renderPracticeCurrent() {
           });
           actions.appendChild(setBtn);
         });
-        root.querySelector(".card").appendChild(actions);
+        card.appendChild(actions);
         return;
       }
 
@@ -273,17 +382,7 @@ function renderPracticeCurrent() {
         setMetaText();
       }
 
-      const actions = document.createElement("div");
-      actions.className = "actions";
-      const setFinalBtn = document.createElement("button");
-      setFinalBtn.textContent = `将当前作答设为最终答案（${selected.join(", ")}）`;
-      setFinalBtn.addEventListener("click", () => {
-        setFinalAnswer(q.id, selected);
-        result.textContent = `已更新最终答案：${selected.join(", ")}（立即生效）`;
-        renderPracticeCurrent();
-      });
-      actions.appendChild(setFinalBtn);
-      root.querySelector(".card").appendChild(actions);
+      appendPracticeSetFinalRow(card, result, q, selected);
     });
   });
 }
