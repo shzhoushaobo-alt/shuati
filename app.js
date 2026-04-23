@@ -61,14 +61,6 @@ function savePracticeState() {
   localStorage.setItem(STORAGE_PRACTICE_STATE, JSON.stringify(payload));
 }
 
-function setFinalAnswer(questionId, answerArr) {
-  state.answersMap[String(questionId)] = answerArr.map((x) => String(x).toUpperCase());
-  saveAnswersMap();
-  setMetaText();
-  renderWrongBook();
-  autoPushCloudAnswers();
-}
-
 function loadLocalData() {
   try {
     const wrong = JSON.parse(localStorage.getItem(STORAGE_WRONG) || "[]");
@@ -222,20 +214,6 @@ function resumeInfinitePracticeIfNeeded() {
   }
 }
 
-function appendPracticeSetFinalRow(card, resultEl, q, selectedKeys) {
-  const actions = document.createElement("div");
-  actions.className = "actions";
-  const setFinalBtn = document.createElement("button");
-  setFinalBtn.textContent = `将当前作答设为最终答案（${selectedKeys.join(", ")}）`;
-  setFinalBtn.addEventListener("click", () => {
-    setFinalAnswer(q.id, selectedKeys);
-    resultEl.textContent = `已更新最终答案：${selectedKeys.join(", ")}（立即生效）`;
-    renderPracticeCurrent();
-  });
-  actions.appendChild(setFinalBtn);
-  card.appendChild(actions);
-}
-
 /** 多选题：点选项仅切换选中，点「确认作答」后才判分与展示解析 */
 function renderPracticeMulti(root, q) {
   let selectedKeys = [];
@@ -281,19 +259,8 @@ function renderPracticeMulti(root, q) {
     }
 
     if (!answer.length) {
-      result.textContent = "此题暂无标准答案。你可以在“答案管理”里导入，或在下方设置本题答案。";
-      const actions = document.createElement("div");
-      actions.className = "actions";
-      q.options.forEach((opt) => {
-        const setBtn = document.createElement("button");
-        setBtn.textContent = `设 ${opt.key} 为答案`;
-        setBtn.addEventListener("click", () => {
-          setFinalAnswer(q.id, [opt.key]);
-          renderPracticeCurrent();
-        });
-        actions.appendChild(setBtn);
-      });
-      card.appendChild(actions);
+      result.textContent =
+        "此题暂无标准答案。请到「答案管理」导入答案 JSON（仅保存在本机浏览器，不影响他人）。";
       return;
     }
 
@@ -311,7 +278,6 @@ function renderPracticeMulti(root, q) {
       saveWrongSet();
       setMetaText();
     }
-    appendPracticeSetFinalRow(card, result, q, selectedKeys);
   }
 
   paint();
@@ -351,19 +317,8 @@ function renderPracticeCurrent() {
       const card = root.querySelector(".card");
 
       if (!answer.length) {
-        result.textContent = "此题暂无标准答案。你可以在“答案管理”里导入，或在下方设置本题答案。";
-        const actions = document.createElement("div");
-        actions.className = "actions";
-        q.options.forEach((opt) => {
-          const setBtn = document.createElement("button");
-          setBtn.textContent = `设 ${opt.key} 为答案`;
-          setBtn.addEventListener("click", () => {
-            setFinalAnswer(q.id, [opt.key]);
-            renderPracticeCurrent();
-          });
-          actions.appendChild(setBtn);
-        });
-        card.appendChild(actions);
+        result.textContent =
+          "此题暂无标准答案。请到「答案管理」导入答案 JSON（仅保存在本机浏览器，不影响他人）。";
         return;
       }
 
@@ -381,8 +336,6 @@ function renderPracticeCurrent() {
         saveWrongSet();
         setMetaText();
       }
-
-      appendPracticeSetFinalRow(card, result, q, selected);
     });
   });
 }

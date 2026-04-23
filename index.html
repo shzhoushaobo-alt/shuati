@@ -10,6 +10,9 @@
   <main class="app">
     <header class="header">
       <h1>AI 题库刷题</h1>
+      <p class="privacy-hint">
+        刷题进度、错题本与本地导入的答案均只存在你的浏览器里；换人或换设备互不干扰。网站服务器不保存你的做题记录。
+      </p>
       <p id="metaText">加载中...</p>
     </header>
 
@@ -53,7 +56,9 @@
         <button id="exportAnswersBtn">导出答案 JSON</button>
       </div>
       <div class="card" style="margin-bottom:10px;">
-        <p class="hint">云端同步（跨设备）：使用 GitHub Gist 存储答案库。</p>
+        <p class="hint">
+          可选：用 GitHub Gist 在你自己的多台设备间同步「答案 JSON」。只有你配置了同一个 Gist 的浏览器会参与同步；其他访客的数据仍在各自本机，互不影响。
+        </p>
         <input id="gistIdInput" type="text" placeholder="Gist ID（例如 8f3a...）" />
         <input id="gistTokenInput" type="password" placeholder="GitHub Token（需 gist 权限，用于推送）" />
         <div class="actions" style="margin-top:8px;">

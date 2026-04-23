@@ -74,6 +74,14 @@ body {
 }
 
 .toolbar,
+.privacy-hint {
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  color: var(--muted, #64748b);
+  margin: 0 0 0.5rem;
+  max-width: 52rem;
+}
+
 .practice-multi-confirm {
   margin-top: 0.75rem;
 }
